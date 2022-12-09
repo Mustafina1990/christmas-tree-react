@@ -3,9 +3,10 @@ import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
 import Header from "./components/header";
 import { SearchDataContext, SelectedItemsContext } from "./context";
 import { TselectedToy } from "./ts-files/interfaces";
+import { startItem } from "./data.data";
 
 function App() {
-  const [searchData, setsearchData] = useState("");
+  const [searchData, setSearchData] = useState("");
   const [item, setItem] = useState<TselectedToy[]>(startItem);
 
   return (
