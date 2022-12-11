@@ -1,0 +1,22 @@
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 45%;
+  width: 40vh;
+  height: 20vh;
+  background-color: rgb(176, 227, 237);
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s linear;
+}
+
+.pop-up__text {
+  text-align: center;
+  color: #ad4444;
+  font-weight: bold;
+  font-size: 25px;
+}
