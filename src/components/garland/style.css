@@ -1,0 +1,7 @@
+.garland__wrapper {
+  width: 100%;
+  height: calc(100vh - 125px);
+  display: none;
+  position: relative;
+  pointer-events: none;
+}

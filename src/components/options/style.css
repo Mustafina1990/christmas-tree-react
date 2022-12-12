@@ -1,0 +1,254 @@
+.options__items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.options__items {
+  margin-bottom: 10%;
+}
+
+.options__title {
+  font-family: Neucha;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.options__choose-tree-wrapper {
+  margin-top: 5%;
+  width: 45%;
+  height: 134px;
+  background: radial-gradient(
+    109.56% 109.56% at 0% -2.94%,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(179, 246, 255, 0.5) 100%
+  );
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in;
+}
+
+.options__choose-tree-wrapper:hover {
+  transform: scale(1.1);
+}
+
+.options__choose-tree {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.options__choose-tree-wrapper:nth-child(1) .options__choose-tree {
+  background: url(../../assets/tree/trees/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-tree-wrapper:nth-child(2) .options__choose-tree {
+  background: url(../../assets/tree/trees/2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-tree-wrapper:nth-child(3) .options__choose-tree {
+  background: url(../../assets/tree/trees/3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-tree-wrapper:nth-child(4) .options__choose-tree {
+  background: url(../../assets/tree/trees/4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-background-wrapper {
+  margin-top: 5%;
+  width: 20%;
+  height: 50px;
+  background: radial-gradient(
+    109.56% 109.56% at 0% -2.94%,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(179, 246, 255, 0.5) 100%
+  );
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in;
+}
+
+.options__choose-background-wrapper:hover {
+  transform: scale(1.3);
+}
+
+.options__choose-background {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.options__choose-background-wrapper:nth-child(1) .options__choose-background {
+  background: url(../../assets/tree/background/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-background-wrapper:nth-child(2) .options__choose-background {
+  background: url(../../assets/tree/background/2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-background-wrapper:nth-child(3) .options__choose-background {
+  background: url(../../assets/tree/background/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-background-wrapper:nth-child(4) .options__choose-background {
+  background: url(../../assets/tree/background/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-background-wrapper:nth-child(5) .options__choose-background {
+  background: url(../../assets/tree/background/5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-background-wrapper:nth-child(6) .options__choose-background {
+  background: url(../../assets/tree/background/6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-background-wrapper:nth-child(7) .options__choose-background {
+  background: url(../../assets/tree/background/7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-background-wrapper:nth-child(8) .options__choose-background {
+  background: url(../../assets/tree/background/8.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options__choose-garland-wrapper {
+  margin-top: 5%;
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+}
+
+.options__choose-garland {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  transition: all 0.4s ease-in;
+}
+
+.options__choose-garland .active-color {
+  transform: scale(1.4);
+}
+
+.options__choose-garland-wrapper:nth-child(1) .options__choose-garland {
+  background-color: red;
+}
+
+.options__choose-garland-wrapper:nth-child(2) .options__choose-garland {
+  background-color: blue;
+}
+
+.options__choose-garland-wrapper:nth-child(3) .options__choose-garland {
+  background-color: yellow;
+}
+
+.options__choose-garland-wrapper:nth-child(4) .options__choose-garland {
+  background-color: green;
+}
+
+.options__choose-garland-wrapper:nth-child(5) .options__choose-garland {
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8
+  );
+}
+
+.options__choose-garland:hover {
+  transform: scale(1.4);
+}
+
+.active-tree {
+  box-shadow: 0px 0px 18px 11px #00adff;
+}
+
+.options__choose-background_active {
+  box-shadow: 0px 0px 14px 10px #00adff;
+}
+
+@media (max-width: 1350px) {
+  .options__item {
+    margin-top: 8%;
+  }
+
+  .options__choose-tree-wrapper {
+    height: 116px;
+  }
+
+  .options__choose-garland-wrapper {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .options__item {
+    margin-bottom: 15%;
+  }
+
+  .options__choose-tree-wrapper {
+    width: 47%;
+    height: 80px;
+  }
+
+  .options__choose-garland-wrapper {
+    width: 30px;
+    height: 30px;
+  }
+
+  .options__choose-background-wrapper {
+    width: 30%;
+    height: 5vh;
+  }
+}
