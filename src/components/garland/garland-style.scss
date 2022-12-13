@@ -1,0 +1,489 @@
+$globe-width: 15px;
+$globe-height: 15px;
+$globe-spacing: 28px;
+$globe-spread: 3px;
+$light-off-opacity: 0.4;
+
+body {
+  background: #000;
+}
+
+.garland {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: 36%;
+  left: calc(2% + 3px);
+  z-index: 100;
+  margin: -15px 0 0 0;
+  padding: 0;
+  pointer-events: none;
+  width: 100%;
+  li {
+    position: relative;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: $globe-width;
+    height: $globe-height;
+    border-radius: 50%;
+    margin: $globe-spacing/2;
+    display: inline-block;
+    background: rgb(238, 0, 143);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(247, 0, 148, 1);
+    animation-name: flash-3;
+    animation-duration: 1.1s;
+
+    &:nth-child(2) {
+      transform: translate(0, 15px);
+    }
+
+    &:nth-child(3) {
+      transform: translate(0, 15px);
+    }
+
+    &:nth-child(odd) {
+      animation-duration: 1.8s;
+    }
+
+    &:nth-child(3n + 1) {
+      animation-duration: 1.4s;
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+
+    &:first-child {
+      margin-left: -$globe-spacing;
+    }
+  }
+}
+
+.multiply-color .garland__first {
+  li {
+    &:nth-child(1) {
+      background: rgb(0, 89, 255);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(0, 89, 255, 0.5);
+      animation-name: flash-2;
+      animation-duration: 1.2s;
+    }
+    &:nth-child(2) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-3;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(3) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-1;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(4) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-4;
+      animation-duration: 1.1s;
+    }
+  }
+}
+
+.multiply-color .garland .garland__second {
+  li {
+    &:nth-child(2) {
+      background: rgb(0, 89, 255);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(0, 89, 255, 0.5);
+      animation-name: flash-2;
+      animation-duration: 1.2s;
+    }
+    &:nth-child(4) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-3;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(1) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-1;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(3) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-4;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(5) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-2;
+      animation-duration: 1.1s;
+    }
+  }
+}
+
+.multiply-color .garland .garland__third {
+  li {
+    &:nth-child(1) {
+      background: rgb(0, 89, 255);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(0, 89, 255, 0.5);
+      animation-name: flash-5;
+      animation-duration: 1.2s;
+    }
+    &:nth-child(2) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-3;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(3) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-1;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(4) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-4;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(5) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-2;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(6) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-1;
+      animation-duration: 1.1s;
+    }
+  }
+}
+
+.multiply-color .garland .garland__fourth {
+  li {
+    &:nth-child(1) {
+      background: rgb(0, 89, 255);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(0, 89, 255, 0.5);
+      animation-name: flash-2;
+      animation-duration: 1.2s;
+    }
+    &:nth-child(2) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-1;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(3) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-2;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(4) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-5;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(5) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-1;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(6) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-3;
+      animation-duration: 1.1s;
+    }
+    &:nth-child(7) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-2;
+      animation-duration: 1.1s;
+    }
+  }
+}
+
+.multiply-color .garland .garland__fifth {
+  li {
+    &:nth-child(1) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-4;
+      animation-duration: 1.5s;
+    }
+    &:nth-child(2) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-5;
+      animation-duration: 1.5s;
+    }
+    &:nth-child(3) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-1;
+      animation-duration: 1.5s;
+    }
+    &:nth-child(4) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-4;
+      animation-duration: 1.5s;
+    }
+    &:nth-child(5) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-2;
+      animation-duration: 1.5s;
+    }
+    &:nth-child(6) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-5;
+      animation-duration: 1.5s;
+    }
+    &:nth-child(7) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-1;
+      animation-duration: 1.5s;
+    }
+    &:nth-child(8) {
+      background: rgba(247, 0, 148, 1);
+      box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+        rgba(247, 0, 148, 1);
+      animation-name: flash-3;
+      animation-duration: 1.5s;
+    }
+  }
+}
+
+.red-color .garland {
+  li {
+    background: rgba(247, 0, 148, 1);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(247, 0, 148, 1);
+    animation-name: flash-5;
+    animation-duration: 1.1s;
+  }
+}
+
+.blue-color .garland {
+  li {
+    background: rgba(0, 89, 255);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(0, 89, 255, 0.7);
+    animation-name: flash-2;
+    animation-duration: 1.5s;
+  }
+}
+
+.yellow-color .garland {
+  li {
+    background: rgba(247, 0, 148, 1);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(247, 0, 148, 1);
+    animation-name: flash-4;
+    animation-duration: 1.5s;
+  }
+}
+
+.green-color .garland {
+  li {
+    background: rgba(247, 0, 148, 1);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(247, 0, 148, 1);
+    animation-name: flash-1;
+    animation-duration: 1.5s;
+  }
+}
+
+@keyframes flash-1 {
+  0%,
+  100% {
+    background: rgba(0, 247, 165, 1);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(0, 247, 165, 0.7);
+  }
+  50% {
+    background: rgba(0, 247, 165, $light-off-opacity);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(0, 247, 165, 0.7);
+  }
+}
+
+@keyframes flash-2 {
+  0%,
+  100% {
+    background: rgba(0, 89, 255, 1);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(0, 89, 255, 1);
+  }
+  50% {
+    background: rgba(0, 255, 255, $light-off-opacity);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(0, 255, 255, 0.7);
+  }
+}
+
+@keyframes flash-3 {
+  0%,
+  100% {
+    background: rgba(247, 0, 148, 1);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(247, 0, 148, 1);
+  }
+  50% {
+    background: rgba(247, 0, 148, $light-off-opacity);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(247, 0, 148, 0.7);
+  }
+}
+
+@keyframes flash-4 {
+  0%,
+  100% {
+    background: rgb(238, 255, 0);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(238, 255, 0, 1);
+  }
+  50% {
+    background: rgba(165, 253, 0, $light-off-opacity);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(165, 253, 0, 0.7);
+  }
+}
+
+@keyframes flash-5 {
+  0%,
+  100% {
+    background: rgb(224, 4, 4);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(224, 4, 4, 1);
+  }
+  50% {
+    background: rgba(219, 133, 185, $light-off-opacity);
+    box-shadow: 0px $globe-height/6 $globe-width * 2 $globe-spread
+      rgba(219, 133, 185, 0.7);
+  }
+}
+
+.garland__first {
+  top: 41%;
+}
+
+.garland__second {
+  top: 50%;
+  height: 70px;
+}
+
+.garland .garland__second .garland__item {
+  &:nth-child(3) {
+    transform: translate(0, 30px);
+  }
+  &:nth-child(4) {
+    transform: translate(0, 15px);
+  }
+}
+
+.garland__third {
+  top: 59%;
+  height: 80px;
+}
+
+.garland .garland__third .garland__item {
+  &:nth-child(3) {
+    transform: translate(0, 30px);
+  }
+  &:nth-child(4) {
+    transform: translate(0, 30px);
+  }
+  &:nth-child(5) {
+    transform: translate(0, 15px);
+  }
+}
+
+.garland__fourth {
+  top: 69%;
+  height: 90px;
+}
+
+.garland .garland__fourth .garland__item {
+  &:nth-child(3) {
+    transform: translate(0, 30px);
+  }
+  &:nth-child(4) {
+    transform: translate(0, 45px);
+  }
+  &:nth-child(5) {
+    transform: translate(0, 30px);
+  }
+  &:nth-child(6) {
+    transform: translate(0, 15px);
+  }
+}
+
+.garland__fifth {
+  top: 77%;
+  height: 100px;
+}
+
+.garland .garland__fourth .garland__item {
+  &:nth-child(3) {
+    transform: translate(0, 30px);
+  }
+  &:nth-child(4) {
+    transform: translate(0, 45px);
+  }
+  &:nth-child(5) {
+    transform: translate(0, 45px);
+  }
+  &:nth-child(6) {
+    transform: translate(0, 30px);
+  }
+  &:nth-child(7) {
+    transform: translate(0, 15px);
+  }
+}
