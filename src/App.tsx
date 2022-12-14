@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import ToysPage from "./pages/toys_page/toys_page";
 import { SearchDataContext, SelectedItemsContext } from "./context";
 import { useContext } from "react";
+import Tree from "./pages/tree_page/Tree";
 import { TselectedToy } from "./ts-files/interfaces";
 import { startItem } from "./data/data";
 

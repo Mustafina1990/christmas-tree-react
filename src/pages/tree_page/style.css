@@ -1,0 +1,204 @@
+.section-tree {
+  display: flex;
+}
+
+.section-tree__item,
+.section-tree__item-right {
+  height: calc(100vh - 125px);
+  width: 20%;
+  background: transparent;
+  backdrop-filter: brightness(0.5);
+}
+
+.section-tree__item_middle {
+  width: 60%;
+  background: url(../../assets/tree/background/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 125px);
+  position: relative;
+}
+
+.tree {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  z-index: 2;
+  width: 435px;
+  height: 620px;
+  user-select: none;
+  transform: translate(-50%, -1%);
+}
+
+.snowfall {
+  width: 25px;
+  height: 25px;
+  background: url(../../assets/tree/interactive_items/snowflake.png);
+  background-position: center;
+  background-size: contain;
+  animation: fall 10s linear forwards;
+  position: absolute;
+  top: -5px;
+}
+
+.section-tree__item-mobile {
+  display: none;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(85vh);
+  }
+}
+
+.star {
+  width: 80px;
+  height: 80px;
+  background: url(../../assets/tree/stars/star.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 180px;
+  left: calc(100% - 50% - 40px);
+  z-index: 10000;
+  display: none;
+}
+
+.mobile__left-options,
+.mobile__left-toys {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 18px;
+  background: radial-gradient(
+    118.88% 606.86% at 0% 0%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(157, 243, 255, 0.6) 100%
+  );
+  -webkit-backdrop-filter: blur(31px);
+  backdrop-filter: blur(31px);
+  border: 1px solid #00aadb;
+  color: #005d6c;
+  font-size: 17px;
+  font-weight: normal;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.star.star_show {
+  display: block;
+}
+
+.mobile__item.show__item,
+.mobile__item.show__item {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .section-tree {
+    flex-direction: column;
+  }
+  .section-tree__item,
+  .section-tree__item-right {
+    height: auto;
+    width: 100%;
+  }
+  .section-tree__options-inner {
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-around;
+  }
+  .button__clear-localstorage {
+    display: none;
+  }
+  .section-tree__interactive-wrapper {
+    display: block;
+    width: 50px;
+  }
+  .section-tree__interactive-button:nth-child(2) {
+    margin-left: 1%;
+  }
+  .options__item {
+    margin: 0 10px;
+    width: 100%;
+  }
+  .section-tree__item-right {
+    display: none;
+  }
+  .section-tree__item-mobile {
+    display: flex;
+    backdrop-filter: brightness(0.5);
+  }
+  .section-tree__item_middle {
+    height: calc(100vh - 120px);
+  }
+  .mobile__item {
+    display: none;
+  }
+  .mobile__left-options,
+  .mobile__left-toys {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+  }
+  .mobile__left-toys {
+    left: 150px;
+  }
+  .section-tree__options-inner.mobile__inner {
+    display: block;
+  }
+  .toys__wrapper {
+    margin: 0;
+    max-height: 170px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-tree__options-inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .section-tree__interactive-wrapper {
+    margin-top: 20px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-tree__interactive-button:nth-child(2) {
+    margin-left: 20px;
+  }
+  .button-sound.section-tree__interactive-button,
+  .button-snowfall.section-tree__interactive-button {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .options__item {
+    width: 43%;
+    margin-top: 20px;
+  }
+  .options__choose-garland-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+  .section-tree__item.section-tree__item_middle {
+    height: calc(100vh - 116px);
+  }
+  .tree {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tree {
+    width: 370px;
+    height: 71vh;
+  }
+}

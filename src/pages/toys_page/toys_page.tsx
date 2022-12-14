@@ -22,7 +22,7 @@ import NoToysMessage from "./NoToysMessage/NoToysMessage";
 export default function ToysPage() {
   const { searchData, setSearchData } = useContext(SearchDataContext);
   const { item, setItem } = useContext(SelectedItemsContext);
-  const { items, setItems } = useState<IToys[]>(data);
+  const [items, setItems] = useState<IToys[]>(data);
   const [filters, setFilters] = useState<IFilters>(startFilters);
   const [sortSelection, setSortSelection] = useState<string>("a-z");
   const [isVisiblePopUp, setIsVisiblePopUp] = useState(false);
@@ -182,7 +182,7 @@ export default function ToysPage() {
             alphabetFilters(items, sortSelection).map((toy) => {
               return (
                 <Item
-                  onClickFunc={selectToys}
+                  onClickFunk={selectToys}
                   toy={toy}
                   item={item}
                   key={toy.num}

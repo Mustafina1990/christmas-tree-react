@@ -44,9 +44,6 @@ export default function Footer() {
             </svg>
           </a>
           <h4 className={styles.footer__year}>2022</h4>
-          <a target="_blank" href="https://rs.school/js/">
-            <div className={styles.footer__rsSchool} />
-          </a>
         </div>
       </div>
     </footer>

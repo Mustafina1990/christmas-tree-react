@@ -5,6 +5,7 @@ export let chooseTreeData = {
   items: [1, 2, 3, 4],
   type: ["1", "2", "3", "4", "5"],
   class: "options__choose-tree-wrapper",
+  wrapperClass: "",
 };
 
 export let chooseBackground = {
@@ -12,6 +13,7 @@ export let chooseBackground = {
   items: [1, 2, 3, 4, 5, 6, 7, 8],
   type: ["1", "2", "3", "4", "5", "6", "7", "8"],
   class: "options__choose-background-wrapper",
+  wrapperClass: "",
 };
 
 export let chooseGarland = {

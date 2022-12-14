@@ -6,12 +6,13 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "nouislider-react": "^3.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "^2.1.3",
-    "web-vitals": "^2.1.4",
-    "typescript": "4.9.3"
+    "typescript": "4.9.3",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26"
   }
 }
