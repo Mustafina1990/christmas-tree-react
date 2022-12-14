@@ -1,0 +1,59 @@
+.toys__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+  margin: 4% 0 10% 0;
+}
+
+.toys-item {
+  width: 45px;
+  height: 45px;
+  background: url(../../assets/tree/toys/1.png);
+}
+
+.toys-item__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  background: radial-gradient(
+    109.56% 109.56% at 0% -2.94%,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(179, 246, 255, 0.5) 100%
+  );
+  width: 70px;
+  height: 70px;
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.toy-count__wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 22px;
+  height: 19px;
+  background: #24c5db;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toy-count {
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+
+@media (max-width: 1330px) {
+  .toys__wrapper {
+    height: auto;
+    max-height: 60vh;
+    justify-content: space-evenly;
+    gap: 0;
+    overflow-y: scroll;
+    align-content: flex-start;
+  }
+}

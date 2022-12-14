@@ -1,7 +1,11 @@
 import React, { useEffect, useReducer, useState } from "react";
 import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
 import Header from "./components/header";
+import MainPage from "./components/main";
+import Footer from "./components/footer";
+import ToysPage from "./pages/toys_page/toys_page";
 import { SearchDataContext, SelectedItemsContext } from "./context";
+import { useContext } from "react";
 import { TselectedToy } from "./ts-files/interfaces";
 import { startItem } from "./data/data";
 
