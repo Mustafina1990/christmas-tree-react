@@ -51,8 +51,8 @@ export default function ToysPage() {
     let favorite = document.querySelector(
       `.row__items_input`
     ) as HTMLInputElement;
-    let sliders = document.querySelectorAll(`.noUi-origin`);
-    let slidersLine = document.querySelectorAll(`.noUi-connect`);
+    let sliders = document.querySelectorAll(".noUi-origin");
+    let slidersLine = document.querySelectorAll(".noUi-connect");
 
     shapes.forEach((item) => item.classList.remove("row__item_active"));
     colors.forEach((item) => item.classList.remove("row__color_active"));
@@ -61,9 +61,9 @@ export default function ToysPage() {
     sliders.forEach((item: Element, ind) => {
       let elem = item as HTMLDivElement;
       if (ind % 2 === 0) {
-        elem.style.transform = "tramslate(-1000%, 0px)";
+        elem.style.transform = "translate(-1000%, 0px)";
       } else {
-        elem.style.transform = "tramslate(0%, 0px)";
+        elem.style.transform = "translate(0%, 0px)";
       }
     });
     (slidersLine[0] as HTMLDivElement).style.transform = "translate(0%, 0px)";
@@ -111,25 +111,28 @@ export default function ToysPage() {
         let progressBar = document.querySelector(
           ".noUi-connect"
         ) as HTMLDivElement;
-        (circles[0] as HTMLDivElement).style.transform = `translate(-${1000 -
-          (1000 * (value[0] - 1)) / 12}%, 0px)`;
-        (circles[1] as HTMLDivElement).style.transform = `translate(-${1000 -
-          (1000 * value[1]) / 12}%, 0px)`;
-        progressBar.style.transform = `translate(${(value[0] - 1) *
-          9.09}%, 0px) scale(${1 - 0.091 * (value[0] + 12 - value[1] - 1)}, 1)`;
+        (circles[0] as HTMLDivElement).style.transform = `translate(-${
+          1000 - (1000 * (value[0] - 1)) / 12
+        }%, 0px)`;
+        (circles[1] as HTMLDivElement).style.transform = `translate(-${
+          1000 - (1000 * value[1]) / 12
+        }%, 0px)`;
+        progressBar.style.transform = `translate(${
+          (value[0] - 1) * 9.09
+        }%, 0px) scale(${1 - 0.091 * (value[0] + 12 - value[1] - 1)}, 1)`;
       }
 
       if (key === "yearOfPurchase") {
         let progressBar = document.querySelectorAll(".noUi-connect");
-        (circles[2] as HTMLDivElement).style.transform = `translate(-${1000 -
-          (value[0] - 1940) * 12.5}%, 0px)`;
-        (circles[3] as HTMLDivElement).style.transform = `translate(-${(2020 -
-          value[1]) *
-          12.5}%, 0px)`;
-        (circles[1] as HTMLDivElement).style.transform = `translate(-${(value[0] -
-          1940) *
-          1.25}%, 0px) scale(${1 -
-          0.0125 * (value[0] - 1940 + 2020 - value[1])}, 1)`;
+        (circles[2] as HTMLDivElement).style.transform = `translate(-${
+          1000 - (value[0] - 1940) * 12.5
+        }%, 0px)`;
+        (circles[3] as HTMLDivElement).style.transform = `translate(-${
+          (2020 - value[1]) * 12.5
+        }%, 0px)`;
+        (progressBar[1] as HTMLDivElement).style.transform = `translate(-${
+          (value[0] - 1940) * 1.25
+        }%, 0px) scale(${1 - 0.0125 * (value[0] - 1940 + 2020 - value[1])}, 1)`;
       }
 
       if (key === "onlyFavorite") {
@@ -182,7 +185,7 @@ export default function ToysPage() {
             alphabetFilters(items, sortSelection).map((toy) => {
               return (
                 <Item
-                  onClickFunk={selectToys}
+                  onClickFunc={selectToys}
                   toy={toy}
                   item={item}
                   key={toy.num}

@@ -2,7 +2,7 @@ import { type } from "@testing-library/user-event/dist/type";
 import React from "react";
 import { createElements } from "../../helped_functions/index";
 import OptionsInner from "./optionsInner";
-import "./styles.css";
+import "./style.css";
 
 type options = {
   data: {

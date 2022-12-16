@@ -100,6 +100,11 @@ export default function FiltersByValue({ setItems, filters }: TFiltersByValue) {
           className={styles.row__items_wrapper}
         >
           <div
+            className={getSecondClass("white", "row__item_color", "color")}
+            itemType="color"
+            datatype="white"
+          ></div>
+          <div
             className={getSecondClass("yellow", "row__item_color", "color")}
             itemType="color"
             datatype="yellow"

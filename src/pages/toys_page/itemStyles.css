@@ -79,23 +79,23 @@
   transform: scale(1.2);
 }
 
-.row__item:nth-child(1) {
+.row__item_color:nth-child(1) {
   background-color: #fff;
 }
 
-.row__item:nth-child(2) {
+.row__item_color:nth-child(2) {
   background-color: #fdd700;
 }
 
-.row__item:nth-child(3) {
+.row__item_color:nth-child(3) {
   background-color: #fd0000;
 }
 
-.row__item:nth-child(4) {
+.row__item_color:nth-child(4) {
   background-color: #2199eb;
 }
 
-.row__item:nth-child(5) {
+.row__item_color:nth-child(5) {
   background-color: #08aa05;
 }
 

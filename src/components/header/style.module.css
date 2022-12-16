@@ -23,7 +23,10 @@
   padding: 20px;
 }
 
-.header__toys .header__nav_active,
+.header__toys .header__nav_active {
+  color: var(--mainColor);
+}
+
 .header__nav a:hover {
   color: var(--mainColor);
 }

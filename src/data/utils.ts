@@ -74,7 +74,7 @@ export function filterItems(arrayFilters: IFilters) {
   if (arrayFilters.size.length > 0) {
     items = items.filter((toy) => {
       for (let i = 0; i < arrayFilters.size.length; i++) {
-        if (toy.color === arrayFilters.size[i]) {
+        if (toy.size === arrayFilters.size[i]) {
           return toy;
         }
       }
@@ -97,9 +97,9 @@ export function filterItems(arrayFilters: IFilters) {
   items = items.filter((toy) => {
     if (
       +toy.count >= arrayFilters.count[0] &&
-      +toy.count >= arrayFilters.count[1] &&
+      +toy.count <= arrayFilters.count[1] &&
       +toy.year >= arrayFilters.yearOfPurchase[0] &&
-      +toy.year >= arrayFilters.yearOfPurchase[1]
+      +toy.year <= arrayFilters.yearOfPurchase[1]
     ) {
       return toy;
     }

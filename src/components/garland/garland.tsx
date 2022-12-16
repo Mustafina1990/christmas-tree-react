@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import "./garland-style.scss"
-import { type } from "@testing-library/user-event/dist/type";
 
 type TGarland = {
     data: {

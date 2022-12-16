@@ -4,7 +4,7 @@ import "./style.css";
 
 interface IitemProps {
   item: TselectedToy[];
-  onClickFunk: (
+  onClickFunc: (
     e: React.MouseEvent<HTMLDivElement, MouseEvent>,
     num: string,
     count: string
@@ -12,14 +12,14 @@ interface IitemProps {
   toy: IToys;
 }
 
-const Item: React.FC<IitemProps> = ({ toy, item, onClickFunk }) => {
+const Item: React.FC<IitemProps> = ({ toy, item, onClickFunc }) => {
   function getSelectedItem(arr: TselectedToy[], num: number) {
     return arr.find((item) => +item.num === num);
   }
   return (
     <div
       datatype={toy.num}
-      onClick={(e) => onClickFunk(e, toy.num, toy.count)}
+      onClick={(e) => onClickFunc(e, toy.num, toy.count)}
       className={
         getSelectedItem(item, +toy.num)
           ? "section__item section__item_active"
