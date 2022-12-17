@@ -47,28 +47,29 @@
 }
 
 .options__choose-tree-wrapper:nth-child(1) .options__choose-tree {
-  background: url(../../assets/tree/trees/1.png);
+  background: url("../../build/trees/1.png");
+
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .options__choose-tree-wrapper:nth-child(2) .options__choose-tree {
-  background: url(../../assets/tree/trees/2.png);
+  background: url("../../build/trees/2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .options__choose-tree-wrapper:nth-child(3) .options__choose-tree {
-  background: url(../../assets/tree/trees/3.png);
+  background: url("../../build/static/media/3.9723e94957e9678f555a.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .options__choose-tree-wrapper:nth-child(4) .options__choose-tree {
-  background: url(../../assets/tree/trees/4.png);
+  background: url("../../build/trees/4.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -103,56 +104,56 @@
 }
 
 .options__choose-background-wrapper:nth-child(1) .options__choose-background {
-  background: url(../../assets/tree/background/1.jpg);
+  background: url(../../build/static/media/1.3cdf483e44dfeea519ee.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .options__choose-background-wrapper:nth-child(2) .options__choose-background {
-  background: url(../../assets/tree/background/2.jpg);
+  background: url(../../build/backgrounds/2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .options__choose-background-wrapper:nth-child(3) .options__choose-background {
-  background: url(../../assets/tree/background/3.jpg);
+  background: url(../../build/backgrounds/3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .options__choose-background-wrapper:nth-child(4) .options__choose-background {
-  background: url(../../assets/tree/background/4.jpg);
+  background: url(../../build/backgrounds/4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .options__choose-background-wrapper:nth-child(5) .options__choose-background {
-  background: url(../../assets/tree/background/5.jpg);
+  background: url(../../build/backgrounds/5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .options__choose-background-wrapper:nth-child(6) .options__choose-background {
-  background: url(../../assets/tree/background/6.jpg);
+  background: url(../../build/backgrounds/6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .options__choose-background-wrapper:nth-child(7) .options__choose-background {
-  background: url(../../assets/tree/background/7.jpg);
+  background: url(../../build/backgrounds/7.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .options__choose-background-wrapper:nth-child(8) .options__choose-background {
-  background: url(../../assets/tree/background/8.jpg);
+  background: url(../../build/backgrounds/8.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

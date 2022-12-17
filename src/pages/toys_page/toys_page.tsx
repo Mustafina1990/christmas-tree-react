@@ -49,7 +49,7 @@ export default function ToysPage() {
     let colors = document.querySelectorAll(`.row__color_active`);
     let sizes = document.querySelectorAll(`.active_size`);
     let favorite = document.querySelector(
-      `.row__items_input`
+      `.row__item_input`
     ) as HTMLInputElement;
     let sliders = document.querySelectorAll(".noUi-origin");
     let slidersLine = document.querySelectorAll(".noUi-connect");
@@ -103,7 +103,7 @@ export default function ToysPage() {
       if (key === "shape" || key === "size" || key === "color") {
         value.forEach((toy: string | number) => {
           document
-            .querySelector(`<div[datatype=${toy}]`)!
+            .querySelector(`[datatype=${toy}]`)!
             .classList.add("row__item_active");
         });
       }
@@ -139,10 +139,13 @@ export default function ToysPage() {
         let input = document.querySelector(
           ".row__items_input"
         ) as HTMLInputElement;
-        if (value === true) {
-          input.checked = true;
-        } else {
-          input.checked = false;
+        console.log("input", input);
+        if (input) {
+          if (value === true) {
+            input.checked = true;
+          } else {
+            input.checked = false;
+          }
         }
       }
     }

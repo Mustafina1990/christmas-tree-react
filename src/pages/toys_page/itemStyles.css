@@ -44,7 +44,7 @@
   transition: all 0.3s linear;
 }
 
-.row__item .row__item_active {
+.row__item.row__item_active {
   filter: invert(9%) sepia(63%) saturate(461%) hue-rotate(322deg)
     brightness(83%) contrast(88%);
 }
@@ -61,7 +61,7 @@
   border-radius: 5px;
 }
 
-.row__item_color .row__item_active::after {
+.row__item_color.row__item_active::after {
   content: "";
   display: block;
   position: absolute;
@@ -113,7 +113,7 @@
   transform: scale(1.2);
 }
 
-.row__item_size .row__item_active {
+.row__item_size.row__item_active {
   filter: invert(9%) sepia(63%) saturate(461%) hue-rotate(322deg)
     brightness(83%) contrast(88%);
 }

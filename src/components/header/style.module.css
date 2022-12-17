@@ -118,18 +118,6 @@
   transition: 0.4s ease-out;
 }
 
-.header__toys::after,
-.header__tree::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0.2em;
-  background: var(--mainColor);
-  bottom: 0;
-  left: 100%;
-  transition: 0.3s 0.3s ease-out;
-}
-
 .header__toys::before,
 .header__tree::before {
   left: 100%;
@@ -138,14 +126,6 @@
 .header__toys::after,
 .header__tree::after {
   left: 0%;
-}
-
-.header__nav_active::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: var(--mainColor);
 }
 
 @media (max-width: 850px) {

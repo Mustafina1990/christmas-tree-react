@@ -52,6 +52,8 @@ export default function FiltersByValue({ setItems, filters }: TFiltersByValue) {
 
   function getSecondClass(type: string, firstClass: string, itemType: string) {
     if (itemType === "shape" || itemType === "color" || itemType === "size") {
+      console.log("type", type);
+      console.log("filters", filters.filters[itemType]);
       return filters.filters[itemType].includes(type)
         ? `${firstClass} row__item_active`
         : firstClass;

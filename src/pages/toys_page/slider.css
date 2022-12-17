@@ -23,13 +23,13 @@
   display: none;
 }
 
-.noUi-horizontal .noUi-handle {
+.noUi-horizontal.noUi-handle {
   top: -7px;
   right: -10px;
 }
 
-.noUi-handle .noUi-handle-lower,
-.noUi-handle .noUi-handle-upper {
+.noUi-handle.noUi-handle-lower,
+.noUi-handle.noUi-handle-upper {
   top: -7px;
   right: -10px;
   width: 20px;
@@ -45,8 +45,8 @@
     min-width: 53px;
   }
 
-  .noUi-handle .noUi-handle-lower,
-  .noUi-handle .noUi-handle-upper {
+  .noUi-handle.noUi-handle-lower,
+  .noUi-handle.noUi-handle-upper {
     width: 15px;
     height: 15px;
     top: -5px;
