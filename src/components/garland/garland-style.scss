@@ -65,7 +65,7 @@ body {
   }
 }
 
-.multiply-color .garland__first {
+.multyply-color .garland__first {
   li {
     &:nth-child(1) {
       background: rgb(0, 89, 255);
@@ -98,7 +98,7 @@ body {
   }
 }
 
-.multiply-color .garland .garland__second {
+.multyply-color .garland.garland__second {
   li {
     &:nth-child(2) {
       background: rgb(0, 89, 255);
@@ -138,7 +138,7 @@ body {
   }
 }
 
-.multiply-color .garland .garland__third {
+.multyply-color .garland.garland__third {
   li {
     &:nth-child(1) {
       background: rgb(0, 89, 255);
@@ -185,7 +185,7 @@ body {
   }
 }
 
-.multiply-color .garland .garland__fourth {
+.multyply-color .garland.garland__fourth {
   li {
     &:nth-child(1) {
       background: rgb(0, 89, 255);
@@ -239,7 +239,7 @@ body {
   }
 }
 
-.multiply-color .garland .garland__fifth {
+.multyply-color .garland.garland__fifth {
   li {
     &:nth-child(1) {
       background: rgba(247, 0, 148, 1);
@@ -411,11 +411,11 @@ body {
 }
 
 .garland__first {
-  top: 41%;
+  top: 23%;
 }
 
 .garland__second {
-  top: 50%;
+  top: 38%;
   height: 70px;
 }
 
@@ -429,7 +429,7 @@ body {
 }
 
 .garland__third {
-  top: 59%;
+  top: 55%;
   height: 80px;
 }
 
@@ -446,7 +446,7 @@ body {
 }
 
 .garland__fourth {
-  top: 69%;
+  top: 71%;
   height: 90px;
 }
 
@@ -466,11 +466,11 @@ body {
 }
 
 .garland__fifth {
-  top: 77%;
+  top: 87%;
   height: 100px;
 }
 
-.garland .garland__fourth .garland__item {
+.garland .garland__fifth .garland__item {
   &:nth-child(3) {
     transform: translate(0, 30px);
   }

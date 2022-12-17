@@ -16,9 +16,9 @@ type options = {
 
 export default function Options(props: options) {
   return (
-    <div className="option__item">
-      <h3 className="option__title">{props.data.title}</h3>
-      <div className="options__item-wrapper">
+    <div className="options__item">
+      <h3 className="options__title">{props.data.title}</h3>
+      <div className="options__items-wrapper">
         {props.data.items.map((item, ind) => {
           return (
             <OptionsInner

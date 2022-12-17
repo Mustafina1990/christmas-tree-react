@@ -343,7 +343,7 @@ export const data = [
   },
   {
     num: "35",
-    name: "figurine fox in scarf",
+    name: "Figurine fox in scarf",
     count: "8",
     year: "1950",
     shape: "figurine",
@@ -583,7 +583,7 @@ export const data = [
   },
   {
     num: "59",
-    name: "Yellow ball with an inscription",
+    name: "Yellow ball",
     count: "10",
     year: "1990",
     shape: "ball",

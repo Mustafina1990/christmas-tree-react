@@ -20,7 +20,7 @@ export default function RightOptions() {
   function showOrHideStar(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     let target = e.target as HTMLButtonElement;
     let star = document.querySelector(".star") as HTMLDivElement;
-    if (star.classList.contains("srar_show")) {
+    if (star.classList.contains("star_show")) {
       star.classList.remove("star_show");
       target.innerHTML = "Add star";
     } else {

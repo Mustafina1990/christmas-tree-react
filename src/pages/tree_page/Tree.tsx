@@ -22,8 +22,10 @@ export default function Tree() {
       ) as HTMLDivElement;
 
       let index = getDataOfItem(toy, item);
+      console.log(index);
       let cloneType = e.dataTransfer.getData("type");
       if (!cloneType) {
+        console.log(item);
         if (item[index].count !== "0") {
           let newItem = item.map((toy) => {
             if (toy.num === `${type}`) {

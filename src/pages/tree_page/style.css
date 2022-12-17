@@ -1,5 +1,6 @@
 .section-tree {
   display: flex;
+  margin-bottom: 5%;
 }
 
 .section-tree__item,

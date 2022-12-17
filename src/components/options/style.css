@@ -4,12 +4,14 @@
   gap: 5%;
 }
 
-.options__items {
+.options__item {
   margin-bottom: 10%;
 }
 
 .options__title {
-  font-family: Neucha;
+  display: flex;
+  justify-content: center;
+  font-family: "Neucha";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -20,8 +22,8 @@
 
 .options__choose-tree-wrapper {
   margin-top: 5%;
-  width: 45%;
-  height: 134px;
+  width: 40%;
+  height: 85px;
   background: radial-gradient(
     109.56% 109.56% at 0% -2.94%,
     rgba(255, 255, 255, 0.5) 0%,
