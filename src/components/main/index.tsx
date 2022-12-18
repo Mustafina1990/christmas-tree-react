@@ -9,7 +9,7 @@ export default function Main() {
         <section className="main__inner">
           <div className="main__title_wrapper">
             <h1 className="main__title">
-              Help Grandma dress up the Christmas tree
+              Help Grandma to dress up the Christmas tree
             </h1>
           </div>
           <Link to="/toys">
