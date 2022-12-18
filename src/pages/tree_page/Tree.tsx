@@ -26,7 +26,7 @@ export default function Tree() {
       let cloneType = e.dataTransfer.getData("type");
       if (!cloneType) {
         console.log(item);
-        if (item[index].count !== "0") {
+        if (!item[index]) {
           let newItem = item.map((toy) => {
             if (toy.num === `${type}`) {
               toy.count = String(+toy.count - 1);
